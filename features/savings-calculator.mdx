@@ -1,0 +1,324 @@
+---
+title: "Savings Calculator"
+description: "Track and understand your savings with our comprehensive savings calculation feature"
+---
+
+## Overview
+
+The savings calculator is the core feature that shows you exactly how much money you're saving on every purchase. Whether you're using percentage or fixed amount discounts, you can instantly see your savings in dollars and as a percentage of the original price.
+
+<Note>
+The savings calculator automatically computes your savings for any discount type, helping you make informed purchasing decisions and track your budget more effectively.
+</Note>
+
+## How Savings Are Calculated
+
+Your savings represent the difference between what you would have paid at full price and what you actually pay after applying discounts.
+
+<Tabs>
+  <Tab title="Percentage Discounts">
+    For percentage-based discounts, savings are calculated as:
+    
+    ```
+    Savings Amount = Original Price × (Discount Percentage ÷ 100)
+    Final Price = Original Price - Savings Amount
+    ```
+    
+    **Example**: $200 item with 35% off
+    - Savings = $200 × 0.35 = $70
+    - Final Price = $200 - $70 = $130
+    - You save $70 (35%)
+  </Tab>
+  
+  <Tab title="Fixed Amount Discounts">
+    For fixed dollar discounts, savings equal the discount amount:
+    
+    ```
+    Savings Amount = Discount Amount
+    Final Price = Original Price - Discount Amount
+    Percentage Saved = (Discount Amount ÷ Original Price) × 100
+    ```
+    
+    **Example**: $80 order with $20 off coupon
+    - Savings = $20
+    - Final Price = $80 - $20 = $60
+    - You save $20 (25%)
+  </Tab>
+</Tabs>
+
+## Understanding Your Savings Display
+
+When you use the calculator, you'll see comprehensive savings information:
+
+<CardGroup cols={3}>
+  <Card title="Original Price" icon="tag">
+    The full retail price before any discounts are applied
+  </Card>
+  
+  <Card title="Discount Applied" icon="percent">
+    The discount amount or percentage you're using
+  </Card>
+  
+  <Card title="Amount Saved" icon="piggy-bank">
+    The total dollars you're saving on this purchase
+  </Card>
+  
+  <Card title="Final Price" icon="dollar-sign">
+    What you actually pay after the discount
+  </Card>
+  
+  <Card title="Savings Percentage" icon="chart-line">
+    Your savings expressed as a percentage of the original price
+  </Card>
+  
+  <Card title="Savings Rate" icon="gauge-high">
+    How good the deal is relative to typical discounts
+  </Card>
+</CardGroup>
+
+## Real-World Savings Scenarios
+
+<Tabs>
+  <Tab title="Weekly Grocery Shopping">
+    **Scenario**: Using various discounts on your weekly $180 grocery bill.
+    
+    You have multiple savings opportunities:
+    - Store member discount: 10% off
+    - Manufacturer coupons: $8 total
+    - Digital app coupon: $5 off orders over $150
+    
+    **Breakdown**:
+    1. Original price: $180
+    2. After 10% member discount: $162 (saved $18)
+    3. After $8 in coupons: $154 (saved $26 total)
+    4. After $5 app coupon: $149 (saved $31 total)
+    
+    **Final Result**: You pay $149 instead of $180, saving $31 (17.2% total savings)
+  </Tab>
+  
+  <Tab title="Holiday Shopping">
+    **Scenario**: Black Friday electronics shopping with stacking deals.
+    
+    You're buying a $1,200 laptop with multiple offers:
+    - Store sale: 20% off
+    - Email subscriber bonus: Additional $50 off
+    - Credit card cashback: 5% back on final price
+    
+    **Breakdown**:
+    1. Original price: $1,200
+    2. After 20% sale: $960 (saved $240)
+    3. After $50 bonus: $910 (saved $290)
+    4. Cashback on $910: $45.50 back
+    
+    **Final Result**: You pay $910 minus $45.50 cashback = $864.50 effective price, saving $335.50 (28% total savings)
+  </Tab>
+  
+  <Tab title="Monthly Subscriptions">
+    **Scenario**: Annual vs monthly subscription pricing analysis.
+    
+    A streaming service offers:
+    - Monthly: $15/month = $180/year
+    - Annual: $120/year (upfront payment)
+    
+    **Breakdown**:
+    - Original annual cost: $180
+    - Annual plan cost: $120
+    - Annual savings: $60
+    - Percentage saved: 33.3%
+    
+    **Final Result**: By paying annually, you save $60 per year, equivalent to getting 2.4 months free.
+  </Tab>
+  
+  <Tab title="Bulk Purchase Savings">
+    **Scenario**: Comparing individual vs bulk pricing on office supplies.
+    
+    You need 10 printer cartridges:
+    - Individual price: $35 each = $350 total
+    - Bulk pack (10 cartridges): $280
+    - Additional coupon: $30 off orders over $250
+    
+    **Breakdown**:
+    1. Individual purchase cost: $350
+    2. Bulk pack price: $280 (saved $70)
+    3. After coupon: $250 (saved $100)
+    
+    **Final Result**: You pay $250 instead of $350, saving $100 (28.6% savings) plus you saved time by ordering once.
+  </Tab>
+</Tabs>
+
+## Savings Impact Over Time
+
+Understanding how small savings compound can motivate smarter shopping decisions:
+
+<AccordionGroup>
+  <Accordion title="Daily Coffee Discount">
+    **Scenario**: Using a 15% loyalty discount on your daily $5 coffee.
+    
+    - Daily savings: $0.75
+    - Weekly savings: $5.25 (5 workdays)
+    - Monthly savings: $22.50
+    - Annual savings: $270
+    
+    That 15% discount saves you enough for a nice weekend getaway or 54 free coffees per year.
+  </Accordion>
+  
+  <Accordion title="Monthly Grocery Discounts">
+    **Scenario**: Averaging $25 in savings per $200 weekly grocery trip (12.5% savings).
+    
+    - Weekly savings: $25
+    - Monthly savings: $100
+    - Annual savings: $1,300
+    
+    Strategic coupon and discount use saves you over $1,000 per year—enough for a family vacation or emergency fund contribution.
+  </Accordion>
+  
+  <Accordion title="Seasonal Clothing Sales">
+    **Scenario**: Only buying clothes during 30-40% off sales instead of full price.
+    
+    - Annual clothing budget: $1,200
+    - Average discount: 35%
+    - Annual savings: $420
+    - Effective spending: $780
+    
+    By timing purchases around sales, you can buy the same items for $420 less, or afford 54% more clothing for the same budget.
+  </Accordion>
+  
+  <Accordion title="Subscription Service Discounts">
+    **Scenario**: Using annual payment discounts across 5 subscriptions (average 20% savings vs monthly).
+    
+    - Monthly total: $85/month = $1,020/year
+    - Annual payment total: $816/year
+    - Annual savings: $204
+    
+    Prepaying annual subscriptions saves you over $200 that can go into savings or investments.
+  </Accordion>
+</AccordionGroup>
+
+## Savings Benchmarks
+
+Use these benchmarks to evaluate if you're getting a good deal:
+
+<CardGroup cols={2}>
+  <Card title="Good Deal: 15-25% Off" icon="thumbs-up">
+    Standard sales and promotions typically offer 15-25% savings. These are solid everyday discounts worth taking advantage of.
+  </Card>
+  
+  <Card title="Great Deal: 30-50% Off" icon="star">
+    Seasonal sales and clearance events often reach 30-50% off. These represent excellent value and are prime shopping opportunities.
+  </Card>
+  
+  <Card title="Exceptional Deal: 50-70% Off" icon="fire">
+    Deep clearance, doorbuster specials, and liquidation sales hit 50-70% savings. These are rare and worth planning purchases around.
+  </Card>
+  
+  <Card title="Too Good to Be True: 75%+ Off" icon="triangle-exclamation">
+    Discounts exceeding 75% are uncommon outside of final clearance. Verify product quality, authenticity, and return policies carefully.
+  </Card>
+</CardGroup>
+
+<Warning>
+Remember that savings only count if you were going to make the purchase anyway. Buying items solely because they're discounted isn't saving money—it's spending money you wouldn't have spent otherwise.
+</Warning>
+
+## Maximizing Your Savings
+
+<Steps>
+  <Step title="Calculate before you buy">
+    Use the savings calculator before making any significant purchase. Seeing the exact dollar amount saved helps you evaluate if the discount is substantial enough.
+  </Step>
+  
+  <Step title="Compare multiple discount scenarios">
+    If you have multiple coupons or discount options, calculate each scenario. Sometimes a smaller percentage off a higher-priced item beats a larger discount on a cheaper alternative.
+  </Step>
+  
+  <Step title="Track your savings over time">
+    Keep a running tally of your monthly or annual savings. Seeing the cumulative impact motivates continued smart shopping habits and helps justify budget planning.
+  </Step>
+  
+  <Step title="Factor in the complete cost">
+    Remember that shipping, taxes, and fees apply to the final discounted price. A $100 item at 20% off costs $80, but with 8% tax becomes $86.40—still savings, but your out-of-pocket is higher than the discounted price alone.
+  </Step>
+</Steps>
+
+## Advanced Savings Tips
+
+<Tabs>
+  <Tab title="Stack Discounts Strategically">
+    When multiple discounts are available, the order matters:
+    
+    **Example**: $150 item with 20% off sale + $10 coupon
+    
+    - **Option A**: Apply percentage first
+      - After 20% off: $120
+      - After $10 coupon: $110
+      - Total saved: $40
+    
+    - **Option B**: Apply dollar amount first
+      - After $10 coupon: $140
+      - After 20% off: $112
+      - Total saved: $38
+    
+    Percentage discounts typically apply to the original price, so Option A usually saves more. Always verify with the retailer's stacking policy.
+  </Tab>
+  
+  <Tab title="Calculate Minimum Spend Value">
+    Determine if meeting a minimum purchase requirement is worth it:
+    
+    **Example**: "Spend $100, get $20 off" when your cart is $85
+    
+    - Current cost: $85
+    - With promotion: Need to add $15 more to reach $100
+    - After discount: $100 - $20 = $80
+    
+    **Analysis**: You'd pay $80 for $100 worth of items vs $85 for $85 worth. Worth it only if those extra $15 in items are things you need or want.
+  </Tab>
+  
+  <Tab title="Calculate Per-Unit Savings">
+    For bulk or multi-item purchases, calculate savings per unit:
+    
+    **Example**: Pack of 24 batteries
+    
+    - Original: $36 ($1.50 per battery)
+    - With 30% discount: $25.20 ($1.05 per battery)
+    - Savings per battery: $0.45
+    - Total savings: $10.80
+    
+    This helps compare bulk discounts against single-item promotions at competing stores.
+  </Tab>
+</Tabs>
+
+## Common Savings Mistakes to Avoid
+
+<Warning>
+**Overspending to Save**: Adding unnecessary items to your cart to reach a minimum purchase threshold for a discount often costs you more than you save. Only add items you genuinely need.
+</Warning>
+
+<CardGroup cols={2}>
+  <Card title="Ignoring Final Price" icon="eye-slash">
+    Focusing only on the percentage saved rather than the final price can lead to overspending. A 50% off sale isn't a deal if the original price was inflated.
+  </Card>
+  
+  <Card title="Forgetting Opportunity Cost" icon="clock">
+    Time spent hunting for deals has value. Driving across town to save $5 on groceries costs you time and gas money. Calculate if the savings justify the effort.
+  </Card>
+  
+  <Card title="Overlooking Total Cost" icon="receipt">
+    Remember to include tax, shipping, and fees in your calculation. A 25% discount might be negated by expensive shipping or a retailer with lower prices but no discount.
+  </Card>
+  
+  <Card title="Impulse Discount Buying" icon="cart-arrow-down">
+    Buying something only because it's on sale isn't saving money—it's spending money. Savings only count on purchases you were planning to make anyway.
+  </Card>
+</CardGroup>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Percentage Discounts" icon="percent" href="/features/percentage-discounts">
+    Master calculating percentage-based discounts
+  </Card>
+  
+  <Card title="Fixed Amount Discounts" icon="dollar-sign" href="/features/fixed-amount-discounts">
+    Learn about fixed dollar amount discount calculations
+  </Card>
+</CardGroup>

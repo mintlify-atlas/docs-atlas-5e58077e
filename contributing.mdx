@@ -1,0 +1,228 @@
+---
+title: "Contributing Guide"
+description: "Learn how to contribute to the Discount Calculator open source project"
+---
+
+Thank you for your interest in contributing to Discount Calculator! This guide will help you get started with contributing to our open source project.
+
+## Why Contribute?
+
+Discount Calculator is an open source project that benefits thousands of users. By contributing, you:
+
+- Help improve a tool that people use daily for shopping and business decisions
+- Gain experience working on a real-world project
+- Collaborate with other developers in the open source community
+- Build your portfolio with meaningful contributions
+
+## Getting Started
+
+<Steps>
+  <Step title="Fork the Repository">
+    Visit the [Discount Calculator repository](https://github.com/modernharp/discountcalculator) on GitHub and click the "Fork" button in the top-right corner. This creates your own copy of the project where you can make changes.
+  </Step>
+
+  <Step title="Clone Your Fork">
+    Clone your forked repository to your local machine:
+    
+    ```bash
+    git clone https://github.com/YOUR-USERNAME/discountcalculator.git
+    cd discountcalculator
+    ```
+    
+    Replace `YOUR-USERNAME` with your GitHub username.
+  </Step>
+
+  <Step title="Set Up Development Environment">
+    Install the project dependencies:
+    
+    ```bash
+    npm install
+    ```
+    
+    Start the development server to see your changes in real-time:
+    
+    ```bash
+    npm run dev
+    ```
+    
+    The application will typically run at `http://localhost:3000`.
+  </Step>
+
+  <Step title="Create a Branch">
+    Create a new branch for your contribution:
+    
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+    
+    Use descriptive branch names like `feature/add-tax-calculation` or `fix/rounding-error`.
+  </Step>
+
+  <Step title="Make Your Changes">
+    Make your code changes, following our coding standards and best practices. Test your changes thoroughly to ensure they work as expected and don't break existing functionality.
+  </Step>
+
+  <Step title="Test Your Changes">
+    Run the test suite to verify everything works:
+    
+    ```bash
+    npm test
+    ```
+    
+    If you're adding new features, consider writing tests to cover your changes.
+  </Step>
+
+  <Step title="Commit Your Changes">
+    Commit your changes with a clear, descriptive message:
+    
+    ```bash
+    git add .
+    git commit -m "Add feature: calculate tax on final price"
+    ```
+    
+    Write commit messages that clearly explain what changed and why.
+  </Step>
+
+  <Step title="Push to Your Fork">
+    Push your branch to your GitHub fork:
+    
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+  </Step>
+
+  <Step title="Create a Pull Request">
+    Go to the original Discount Calculator repository on GitHub. You'll see a prompt to create a pull request from your recently pushed branch. Click "Compare & pull request" and provide:
+    
+    - A clear title describing your changes
+    - A detailed description of what you changed and why
+    - Any relevant issue numbers (e.g., "Fixes #123")
+    - Screenshots if your changes affect the UI
+  </Step>
+</Steps>
+
+## What Can You Contribute?
+
+### Code Contributions
+
+<CardGroup cols={2}>
+  <Card title="New Features" icon="plus">
+    Add functionality like tax calculations, currency conversion, bulk discount calculations, or saving calculation history. Check the issues page for feature requests.
+  </Card>
+
+  <Card title="Bug Fixes" icon="bug">
+    Fix calculation errors, UI glitches, or browser compatibility issues. Look for issues labeled "bug" in the repository.
+  </Card>
+
+  <Card title="Performance Improvements" icon="gauge-high">
+    Optimize calculations, reduce bundle size, or improve loading times. Every millisecond matters for user experience.
+  </Card>
+
+  <Card title="Accessibility" icon="universal-access">
+    Improve keyboard navigation, screen reader support, or color contrast. Making the tool accessible to everyone is a priority.
+  </Card>
+</CardGroup>
+
+### Non-Code Contributions
+
+<CardGroup cols={2}>
+  <Card title="Documentation" icon="book">
+    Improve README files, add code comments, create tutorials, or expand this documentation. Clear docs help everyone.
+  </Card>
+
+  <Card title="Design" icon="palette">
+    Propose UI improvements, create mockups, or enhance the visual design. Good design makes the tool more enjoyable to use.
+  </Card>
+
+  <Card title="Testing" icon="flask">
+    Test the application on different devices and browsers, report bugs, or suggest usability improvements.
+  </Card>
+
+  <Card title="Translations" icon="language">
+    Help translate the interface into other languages, making the tool accessible to non-English speakers worldwide.
+  </Card>
+</CardGroup>
+
+## Coding Standards
+
+Follow these guidelines when writing code:
+
+<AccordionGroup>
+  <Accordion title="Code Style">
+    - Use consistent indentation (2 spaces)
+    - Write clear, descriptive variable and function names
+    - Follow the existing code style in the project
+    - Use ESLint and Prettier for code formatting
+    - Keep functions small and focused on a single task
+  </Accordion>
+
+  <Accordion title="Comments">
+    - Write comments for complex logic or calculations
+    - Explain why, not what (the code shows what)
+    - Keep comments up-to-date when code changes
+    - Use JSDoc format for function documentation
+  </Accordion>
+
+  <Accordion title="Testing">
+    - Write tests for new features and bug fixes
+    - Ensure all tests pass before submitting your PR
+    - Test edge cases and error conditions
+    - Verify your changes work across different browsers
+  </Accordion>
+
+  <Accordion title="Commits">
+    - Make small, focused commits
+    - Write clear commit messages in present tense
+    - Reference issue numbers when applicable
+    - Don't commit unrelated changes together
+  </Accordion>
+</AccordionGroup>
+
+## Pull Request Guidelines
+
+When submitting a pull request:
+
+<Check>Keep changes focused on a single issue or feature</Check>
+<Check>Include a clear description of what changed and why</Check>
+<Check>Add screenshots for UI changes</Check>
+<Check>Ensure all tests pass</Check>
+<Check>Update documentation if needed</Check>
+<Check>Respond to reviewer feedback promptly</Check>
+
+<Warning>
+  Pull requests that don't follow these guidelines may be closed until they meet the requirements. This helps maintain code quality and makes reviews easier.
+</Warning>
+
+## Code Review Process
+
+After you submit a pull request:
+
+1. **Automated Checks**: GitHub Actions will run tests and linting automatically
+2. **Maintainer Review**: A project maintainer will review your code within a few days
+3. **Feedback**: You may receive suggestions for improvements or changes
+4. **Iteration**: Make requested changes and push them to your branch
+5. **Approval**: Once approved, a maintainer will merge your contribution
+
+Be patient and receptive to feedback. Code review is a collaborative process that improves code quality.
+
+## Getting Help
+
+<CardGroup cols={2}>
+  <Card title="GitHub Issues" icon="github">
+    Ask questions or report problems in the [GitHub Issues](https://github.com/modernharp/discountcalculator/issues) section.
+  </Card>
+
+  <Card title="Discussions" icon="comments">
+    Join conversations about features and improvements in GitHub Discussions.
+  </Card>
+</CardGroup>
+
+## License
+
+By contributing to Discount Calculator, you agree that your contributions will be licensed under the MIT License. This ensures the project remains free and open source.
+
+<Tip>
+  Start with small contributions like fixing typos, improving documentation, or tackling "good first issue" labels. This helps you get familiar with the project before taking on larger features.
+</Tip>
+
+Thank you for contributing to Discount Calculator! Your efforts help make financial calculations accessible to everyone.

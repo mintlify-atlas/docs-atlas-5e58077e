@@ -1,80 +1,156 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: Quickstart Guide
+description: Learn how to use Discount Calculator in under a minute
 ---
 
-## Get started in three steps
+This guide will walk you through your first discount calculation from start to finish.
 
-Get your documentation site running locally and make your first customization.
+## Your First Calculation
 
-### Step 1: Set up your local environment
+Follow these steps to calculate your first discount and see how much you'll save.
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
+<Steps>
+  <Step title="Visit the Calculator">
+    Navigate to [discountcalculator.org](https://discountcalculator.org) in your web browser. The calculator loads instantly with no sign-up required.
+  </Step>
+  
+  <Step title="Enter the Original Price">
+    In the **Original Price** field, type the full price of the item before any discounts. For example, if you're buying a jacket that costs $120, enter `120`.
     
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
+    <Tip>
+      You don't need to include the dollar sign - just enter the number.
+    </Tip>
+  </Step>
+  
+  <Step title="Select Your Discount Type">
+    Choose the type of discount you're receiving:
     
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 2: Deploy your changes
-
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
+    - **Percentage (%)** - For discounts like "25% off" or "50% off"
+    - **Fixed Amount ($)** - For discounts like "$10 off" or "$25 off"
     
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+    Click the appropriate button or toggle to select your discount type.
+  </Step>
+  
+  <Step title="Enter the Discount Value">
+    In the **Discount** field, enter the discount amount:
+    
+    - For percentage discounts, enter just the number (e.g., `25` for 25% off)
+    - For fixed amount discounts, enter the dollar amount (e.g., `10` for $10 off)
+  </Step>
+  
+  <Step title="View Your Results">
+    The calculator instantly displays three key pieces of information:
+    
+    - **Original Price** - The starting price you entered
+    - **You Save** - The total amount you're saving with this discount
+    - **Final Price** - The amount you'll actually pay after the discount
+  </Step>
+</Steps>
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+## Example Calculation
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+Let's walk through a real example to see the calculator in action.
 
-### Step 3: Go live
+<CodeGroup>
+```text Percentage Discount Example
+Original Price: $120
+Discount Type: Percentage
+Discount Amount: 25%
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+Results:
+- Original Price: $120.00
+- You Save: $30.00
+- Final Price: $90.00
+```
 
-## Next steps
+```text Fixed Amount Example
+Original Price: $120
+Discount Type: Fixed Amount
+Discount Amount: $15
 
-Now that you have your docs running, explore these key features:
-
-<CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
-</CardGroup>
+Results:
+- Original Price: $120.00
+- You Save: $15.00
+- Final Price: $105.00
+```
+</CodeGroup>
 
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  The calculator updates your results in real-time as you type. You'll see the final price and savings amount change instantly with each keystroke.
 </Note>
+
+## Tips for Best Results
+
+<CardGroup cols={2}>
+  <Card title="Double-Check Discount Type" icon="check-double">
+    Make sure you've selected the correct discount type (% or $) before entering your discount value.
+  </Card>
+  <Card title="Use Decimal Values" icon="decimal">
+    You can enter prices with cents (like 49.99) for precise calculations.
+  </Card>
+  <Card title="Compare Multiple Discounts" icon="scale-balanced">
+    Try different discount values to compare which deal saves you more money.
+  </Card>
+  <Card title="Works Offline" icon="wifi-slash">
+    Once loaded, the calculator works without an internet connection.
+  </Card>
+</CardGroup>
+
+## Common Questions
+
+<AccordionGroup>
+  <Accordion title="What if I have multiple discounts?" icon="layers">
+    If you're applying multiple discounts (like a sale discount plus a coupon), calculate them one at a time. Use the final price from the first discount as the original price for the second calculation.
+  </Accordion>
+  
+  <Accordion title="Can I calculate reverse discounts?" icon="rotate-left">
+    Yes! If you know the final price and want to find the original price, you can work backwards. Enter the final price, then adjust the discount until the calculation matches.
+  </Accordion>
+  
+  <Accordion title="Does it account for tax?" icon="receipt">
+    The calculator shows pre-tax prices. Sales tax is typically applied after discounts at checkout, so add tax to your final price separately.
+  </Accordion>
+  
+  <Accordion title="Is my data saved?" icon="floppy-disk">
+    No data is stored or transmitted. All calculations happen locally in your browser for complete privacy.
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+Now that you've completed your first calculation, you can:
+
+<CardGroup cols={2}>
+  <Card
+    title="Learn About Percentage Discounts"
+    icon="percent"
+    href="/features/percentage-discounts"
+  >
+    Master percentage-based discount calculations
+  </Card>
+  <Card
+    title="Explore Fixed Discounts"
+    icon="dollar-sign"
+    href="/features/fixed-amount-discounts"
+  >
+    Understand fixed amount discount scenarios
+  </Card>
+  <Card
+    title="View Examples"
+    icon="book-open"
+    href="/examples"
+  >
+    See real-world shopping discount examples
+  </Card>
+  <Card
+    title="Tips & Tricks"
+    icon="lightbulb"
+    href="/guides/tips-and-tricks"
+  >
+    Get the most out of Discount Calculator
+  </Card>
+</CardGroup>
+
+<Warning>
+  Always verify the final price at checkout. Retailers may have specific rules about how discounts are applied or combined.
+</Warning>
