@@ -1,0 +1,51 @@
+{
+  "projectType": "saas",
+  "projectName": "Discount Calculator",
+  "projectDescription": "A free web tool to calculate discounted prices and savings on purchases.",
+  "theme": "almond",
+  "primaryColor": "#10b981",
+  "lightColor": "#d1fae5",
+  "darkColor": "#065f46",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Features",
+            "pages": ["features/percentage-discounts", "features/fixed-amount-discounts", "features/savings-calculator"]
+          },
+          {
+            "group": "Guides",
+            "pages": ["guides/using-the-calculator", "guides/understanding-discounts", "guides/tips-and-tricks"]
+          }
+        ]
+      },
+      {
+        "tab": "Resources",
+        "groups": [
+          {
+            "group": "Additional Resources",
+            "pages": ["faq", "examples", "contributing"]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Calculate final price after percentage discounts",
+    "Calculate final price after fixed amount discounts",
+    "Determine total amount saved",
+    "User-friendly interface for quick calculations"
+  ],
+  "publicApiSurface": [
+    "Percentage discount calculation",
+    "Fixed amount discount calculation",
+    "Savings amount calculation",
+    "Final price calculation"
+  ]
+}
